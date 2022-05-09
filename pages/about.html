@@ -21,54 +21,62 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/about.css">
+
+        <link rel="stylesheet" href="../styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+	    <script src="../javascript/jquery.slicknav.min.js"></script> 
+
+        <script> 
+            $(document).ready(function(){ 
+            $ ( '#nav_menu'). slicknav( {prependTo: "#mobile_menu"}); } ) ; 
+        </script>
     </head>
     <body>
         <header>
             <div id="headerContent">
-                <a href="index.html"><img src="images/fishnet_bg.png" alt="Logo"></a>
-                <h1>Noah Fisher's Portfolio</h1>
+                <a href="../index.html"><img src="../images/fishnet_bg.png" alt="Logo"></a>
+                <h1>About Me</h1>
             </div>
         </header>
         <main>
+            <nav id="mobile_menu"></nav>
+            <aside>
+                <nav id="nav_menu">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html" id="current">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="tech.html">Tech</a></li>
+                    </ul>
+                </nav>
+            </aside>
             <section>
-                <div id="columnContainer">
-                    <div id="row1">
-                        <div id="column1">
-                            <a href="pages/about.html">
-                                <p>About Me</p>
-                            </a>
-                            <a href="pages/projects.html">
-                                <p>Projects</p>
-                            </a>
-                        </div>
-                        <div id="column2">
-                            <a href="pages/contact.html">
-                                <p>Contact</p>
-                            </a>
-                            <a href="pages/tech.html">
-                                <p>Tech</p>
-                            </a>
-                        </div>
-                    </div>
-                    <h2>Image Gallery</h2>
-                    <div id="row2">
-                        <div id="gallery">
-                            <div id="row1">
-                                <img src="images/eagle.jpg" alt="Eagle">
-                                <img src="images/cow.jpg" alt="Cow">
+                <article>
+                    <div id="columnContainer">
+                        <div id="row1">
+                            <div id="column1">
+                                <img src="../images/headshot.png" alt="Picture of me">
                             </div>
-                            <div id="row2">
-                                <img src="images/crowned-pigeon.jpg" alt="Crowned Pigeon">
-                                <img src="images/owl.jpg" alt="Owl">
+                            <div id="column2">
+                                <article>
+                                    <p>I am currently a student at Southern Crescent Technical College, on the path towards earning a degree in Computer Programming. I enjoy experimenting with computers and exploring what various programming languages have to offer.</p>
+                                </article>
+                            </div> 
+                        </div>
+                        <h2>My Favorite Languages</h2>
+                        <div id="row2">
+                            <div id="column1">
+                                <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank"><img src="../images/csharp-logo.svg" alt="CSharp Logo"></a>
                             </div>
-                            <div id="row3">
-                                <img src="images/iguana.jpg" alt="Iguana">
+                            <div id="column2">
+                                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"><img src="../images/python-logo.svg" alt="Python Logo"></a>
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
             </section>
         </main>
         <footer>

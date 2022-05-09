@@ -21,54 +21,53 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/tech.css">
+
+        <link rel="stylesheet" href="../styles/slicknav.css"> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+	    <script src="../javascript/jquery.slicknav.min.js"></script> 
+
+        <script> 
+            $(document).ready(function(){ 
+            $ ( '#nav_menu'). slicknav( {prependTo: "#mobile_menu"}); } ) ; 
+        </script>
     </head>
     <body>
         <header>
             <div id="headerContent">
-                <a href="index.html"><img src="images/fishnet_bg.png" alt="Logo"></a>
-                <h1>Noah Fisher's Portfolio</h1>
+                <a href="../index.html"><img src="../images/fishnet_bg.png" alt="Logo"></a>
+                <h1>Tech</h1>
             </div>
         </header>
         <main>
+            <nav id="mobile_menu"></nav>
+            <aside>
+                <nav id="nav_menu">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="tech.html" id="current">Tech</a></li>
+                    </ul>
+                </nav>
+            </aside>
             <section>
-                <div id="columnContainer">
-                    <div id="row1">
-                        <div id="column1">
-                            <a href="pages/about.html">
-                                <p>About Me</p>
-                            </a>
-                            <a href="pages/projects.html">
-                                <p>Projects</p>
-                            </a>
-                        </div>
-                        <div id="column2">
-                            <a href="pages/contact.html">
-                                <p>Contact</p>
-                            </a>
-                            <a href="pages/tech.html">
-                                <p>Tech</p>
-                            </a>
-                        </div>
+                <article>
+                    <h2>HTML5</h2>
+                    <h4><em>HyperText Markup Language</em> is the foundation of any website. Other languages build upon this foundation to provide the most enjoyable user experience possible.</h4>
+                    <div class="videoWrapper">
+                    <iframe src="https://www.youtube.com/embed/ok-plXXHlWw"></iframe>
                     </div>
-                    <h2>Image Gallery</h2>
-                    <div id="row2">
-                        <div id="gallery">
-                            <div id="row1">
-                                <img src="images/eagle.jpg" alt="Eagle">
-                                <img src="images/cow.jpg" alt="Cow">
-                            </div>
-                            <div id="row2">
-                                <img src="images/crowned-pigeon.jpg" alt="Crowned Pigeon">
-                                <img src="images/owl.jpg" alt="Owl">
-                            </div>
-                            <div id="row3">
-                                <img src="images/iguana.jpg" alt="Iguana">
-                            </div>
-                        </div>
+                </article>
+                <article>
+                    <h2>CSS3</h2>
+                    <h4><em>Cascading Style Sheets</em> provide a way for web designers to quickly manipulate the appearance of their websites.</h4>
+                    <div class="videoWrapper">
+                    <iframe  src="https://www.youtube.com/embed/OEV8gMkCHXQ"></iframe>
                     </div>
-                </div>
+                </article>
             </section>
         </main>
         <footer>
